@@ -4,7 +4,7 @@ define([
     'Sidebar',
     'About',
     'Contacts'
-], function ( Router, MainModule, SidebarModule, AboutModule, FolioModule, ContactsModule ) {
+], function ( Router, MainModule, SidebarModule, AboutModule, ContactsModule ) {
     'use strict';
 
     var initialize = function ( data ) {
