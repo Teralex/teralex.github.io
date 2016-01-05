@@ -11,7 +11,7 @@ define([
                 for (var key in options)
                     this[key] = options[key];
             }
-            $.getJSON("http://teralex.github.io/scripts/api/base.php", function (data) {
+            $.getJSON("../scripts/api/base.php", function (data) {
                 console.log(1);
                 console.log(data);
             });
