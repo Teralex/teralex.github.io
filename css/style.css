@@ -315,10 +315,10 @@ h3 {
     margin-top:0
 }
 .wrp-main {
-    background-color: #4CB829;
-    background:-webkit-gradient(linear,left top,left bottom,from(#4CB829),to(#007bb0));
-    background:-webkit-linear-gradient(top,#4CB829,#007bb0);
-    background:-o-linear-gradient(top,#4CB829,#007bb0);
+    background-color: #068454;
+    background:-webkit-gradient(linear,left top,left bottom,from(#068454),to(#093aec));
+    background:-webkit-linear-gradient(top,#068454,#093aec);
+    background:-o-linear-gradient(top,#068454,#093aec);
     text-align:center;
     width:100%;
     min-height:100%
