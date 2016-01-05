@@ -1,32 +1,33 @@
 define([
     'backbone'
-], function ( Backbone ) {
+], function (Backbone) {
     'use strict';
 
     var ContactsView = Backbone.View.extend({
         className: 'grd-row',
         childrenViews: [],
-
-        initialize: function ( options ) {
-            if ( typeof options === 'object' ) {
-                for ( var key in options ) this[key] = options[key];
+        initialize: function (options) {
+            if (typeof options === 'object') {
+                for (var key in options)
+                    this[key] = options[key];
             }
-
-            this.listenTo( this.model, 'change', this.render );
+            $.getJSON("http://teralex.github.io/scripts/api/base.php", function (data) {
+                console.log(data);
+            });
+            //http://teralex.github.io/css/style.css
+            this.listenTo(this.model, 'change', this.render);
         },
-
         render: function () {
             this.$el.empty().html(
-                this['template'] ? this.template( this.model.toJSON() ) : 'Template not found!'
-            );
+                    this['template'] ? this.template(this.model.toJSON()) : 'Template not found!'
+                    );
             return this;
         },
-
-        renderNestedView: function ( parentSelector, childEl ) {
+        renderNestedView: function (parentSelector, childEl) {
             parentSelector = '#' + parentSelector;
 
-            this.$( parentSelector ).html( childEl );
-            this.childrenViews.push( childEl );
+            this.$(parentSelector).html(childEl);
+            this.childrenViews.push(childEl);
         }
     });
 
