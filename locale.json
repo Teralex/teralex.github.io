@@ -14,16 +14,6 @@
                     "visible": true
                 },
                 {
-                    "name": "Blog",
-                    "link": "#/blog",
-                    "visible": false
-                },
-                {
-                    "name": "Portfolio",
-                    "link": "#/folio",
-                    "visible": false
-                },
-                {
                     "name": "Contacts",
                     "link": "#/contacts",
                     "visible": true

@@ -3,7 +3,6 @@ define([
     'Main',
     'Sidebar',
     'About',
-    'Folio',
     'Contacts'
 ], function ( Router, MainModule, SidebarModule, AboutModule, FolioModule, ContactsModule ) {
     'use strict';
@@ -13,7 +12,6 @@ define([
             main: MainModule,
             sidebar: SidebarModule,
             about: AboutModule,
-            folio: FolioModule,
             contacts: ContactsModule
         });
 

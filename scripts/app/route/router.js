@@ -8,8 +8,6 @@ define(['backbone'], function ( Backbone ) {
             routes: {
                 '': 'ShowMain',
                 'about': 'ShowAbout',
-                'blog': 'ShowBlog',
-                'folio': 'ShowFolio',
                 'contacts': 'ShowContacts'
             },
 
@@ -29,16 +27,6 @@ define(['backbone'], function ( Backbone ) {
                 var tiny = modules.sidebar.get('view').tinySidebar;
 
                 contentEl = modules.about.get('moduleEl');
-                modules.main.renderNestedView('content', contentEl);
-                if ( !tiny ) modules.sidebar.toggleSidebar();
-            },
-            ShowBlog: function () {
-                this.simpleLogger('ShowBlog route called!');
-            },
-            ShowFolio: function () {
-                var tiny = modules.sidebar.get('view').tinySidebar;
-
-                contentEl = modules.folio.get('moduleEl');
                 modules.main.renderNestedView('content', contentEl);
                 if ( !tiny ) modules.sidebar.toggleSidebar();
             },
