@@ -45,13 +45,6 @@ require.config({
             main: 'AboutManager'
         },
 
-        // Portfolio Module
-        {
-            name: 'Folio',
-            location: 'app/folio',
-            main: 'FolioManager'
-        },
-
         // Contacts Module
         {
             name: 'Contacts',
