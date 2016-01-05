@@ -514,6 +514,9 @@ h3 {
 .m-stars-normal:before {
     width:63px
 }
+.m-stars-low:before {
+    width:43px
+}
 .b-folio-item {
     border-bottom:1px dashed #ccc;
     padding-bottom:30px

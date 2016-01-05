@@ -2,10 +2,10 @@
     "sections": {
         "sidebar": {
             "userPic": "./images/userpic.jpg",
-            "username": "Iaroslav Barakhovskyi",
+            "username": "Alexander Tereshenko",
             "startPage": "#/",
             "userDescription": [
-                "Hello! I am Front-End Developer who likes to complex projects, beautiful and clear code, NodeJS/React/Backbone, motorcycles and tattoos."
+                "Hello! I am Web Developer who likes to complex projects, beautiful and clear code. I work with PHP, JS, Backbone, React."
             ],
             "mainMenu": [
                 {
@@ -40,9 +40,9 @@
                 {
                     "name": "Education",
                     "description": [
-                        "<b>Taurida National V.I.Vernadsky University</b>, Simferopol, Ukraine.",
-                        "Bachelor of Sience.",
-                        "Graduated June 2010."
+                        "<b>V. N. Karazin Kharkiv National University</b>, Kharkiv, Ukraine.",
+                        "Student.",
+                        "Present time."
                     ],
                     "firstColumn": true
                 },
@@ -56,21 +56,21 @@
                     "employments": [
                         {
                             "company": {
-                                "name": "CS Ltd.",
+                                "name": "Gameloft.",
                                 "city": "Kharkiv",
                                 "country": "Ukraine",
-                                "position": "Front-End Developer",
-                                "dateFrom": "June 2014",
-                                "dateTill": "November 2015"
+                                "position": "e-Commerce PHP Developer",
+                                "dateFrom": "September 2014",
+                                "dateTill": "Present time"
                             },
                             "duties": [
-                                "Design and development of single-page applications using BackboneJS/CanJS",
-                                "HTML/LESS/JS codding",
-                                "Experience with Java (debugging, simple tasks)",
+                                "Design and development of e-Commerce projects and sales sites",
+                                "HTML/PML/OML/PHP/JS codding",
+                                "Experience with Python and Ruby (simple tasks)",
                                 "Code refactoring",
                                 "Support of existing projects",
-                                "Tasks/time management of team",
                                 "Code review",
+                                "Creation of user and technical documentation for partners",
                                 "Creation of documentation for inner development tools"
                             ]
                         },
@@ -80,30 +80,13 @@
                                 "city": "Kharkiv",
                                 "country": "Ukraine",
                                 "position": "Markup Developer",
-                                "dateFrom": "February 2013",
-                                "dateTill": "June 2014"
+                                "dateFrom": "June 2014",
+                                "dateTill": "September 2014"
                             },
                             "duties": [
                                 "HTML codding",
-                                "LESS codding (in particular the creation of mixins library)",
-                                "jQuery codding (simple animations and events, jQuery plugins implementation)",
-                                "Support of existing projects"
-                            ]
-                        },
-                        {
-                            "company": {
-                                "name": "\"A-RT\" web agency",
-                                "city": "Kharkiv",
-                                "country": "Ukraine",
-                                "position": "Front-End Developer",
-                                "dateFrom": "November 2012",
-                                "dateTill": "February 2013"
-                            },
-                            "duties": [
-                                "HTML/CSS/JS codding",
-                                "Templating with Smarty teplate engine",
-                                "Web-design",
-                                "Support of existing projects"
+                                "PHP codding",
+                                "Development of Parsers for some web catalogues"
                             ]
                         }
                     ]
@@ -123,9 +106,14 @@
                             "stars": "good"
                         },
                         {
+                            "name": "PHP",
+                            "level": "Advanced",
+                            "stars": "good"
+                        },
+                        {
                             "name": "Javascript",
-                            "level": "Intermediate",
-                            "stars": "normal"
+                            "level": "Pre-Intermediate",
+                            "stars": "low"
                         },
                         {
                             "name": "CSS",
@@ -133,40 +121,34 @@
                             "stars": "good"
                         },
                         {
-                            "name": "Less",
-                            "level": "Advanced",
-                            "stars": "good"
-                        },
-                        {
                             "name": "BackboneJS",
                             "level": "Intermediate",
-                            "stars": "normal"
-                        },
-                        {
-                            "name": "CanJS",
-                            "level": "Intermediate",
-                            "stars": "normal"
+                            "stars": "low"
                         },
                         {
                             "name": "Responsive Design",
+                            "level": "Pre-Intermediate",
+                            "stars": "low"
+                        },
+                        {
+                            "name": "REST",
                             "level": "Intermediate",
                             "stars": "normal"
                         }
                     ],
                     "subSkills": [
-                        "Adobe Photoshop",
-                        "Adobe Illustrator",
-                        "CorelDRAW",
                         "Git",
                         "SVN",
                         "Linux",
-                        "Windows"
+                        "Windows",
+                        "Ruby",
+                        "Python"
                     ]
                 },
                 {
                     "name": "Hobbies & Interests",
                     "description": [
-                        "I like play guitar and sign. Also I prefer extreme types of sport, such as rollers, bike and motorcycle riding,rope/bungee jumping."
+                        "I like play guitar and sign, read good books(fantasy/science/historical) ."
                     ],
                     "secondColumn": true
                 },
@@ -177,7 +159,7 @@
                     "langs": [
                         {
                             "name": "English",
-                            "level": "Conversational"
+                            "level": "Intermediate"
                         },
                         {
                             "name": "Russian",
@@ -188,103 +170,6 @@
                             "level": "Fluent"
                         }
                     ]
-                }
-            ]
-        },
-        "folio": {
-            "pageHeader": "Portfolio",
-            "pageDescription": [],
-            "folio": [
-                {
-                    "categoryName": "spa",
-                    "categoryItems": [
-                        {
-                            "name": "iFOBS Landing",
-                            "type": "Landing page",
-                            "link": "http://csltd.com.ua/ifobs",
-                            "description": [],
-                            "img": ""
-                        },
-                        {
-                            "name": "iFOBS",
-                            "type": "Internet Banking System",
-                            "link": "http://csltd.com.ua/en/our-products/for-banking/ifobs.html",
-                            "description": [],
-                            "img": ""
-                        }
-                    ]
-                },
-                {
-                    "categoryName": "markup",
-                    "categoryItems": [
-                        {
-                            "name": "Gorodskoy Dozor",
-                            "type": "Mobile version",
-                            "link": "http://m.dozor.kharkov.ua/",
-                            "description": [],
-                            "img": "./images/folio/guardwatch.png"
-                        },
-                        {
-                            "name": "Internet representation of \"Apteka Zdorovia\" network",
-                            "type": "",
-                            "link": "http://mega-apteka.com/",
-                            "description": [],
-                            "img": ""
-                        },
-                        {
-                            "name": "Iconochka",
-                            "type": "Shop",
-                            "link": "http://iconochka.com.ua/",
-                            "description": [],
-                            "img": ""
-                        },
-                        {
-                            "name": "Aktiv Dosug",
-                            "type": "Shop",
-                            "link": "http://aktiv-dosyg.com.ua/",
-                            "description": [],
-                            "img": ""
-                        },
-                        {
-                            "name": "Be First",
-                            "type": "Shop",
-                            "link": "http://b-1.ua/",
-                            "description": [],
-                            "img": ""
-                        },
-                        {
-                            "name": "Lampa G13",
-                            "type": "Informational",
-                            "link": "http://lampag13.ru/",
-                            "description": [],
-                            "img": ""
-                        },
-                        {
-                            "name": "Himalayan Salt",
-                            "type": "Informational",
-                            "link": "http://gimalay-salt.ru/",
-                            "description": [],
-                            "img": ""
-                        },
-                        {
-                            "name": "Inter Lift",
-                            "type": "Informational",
-                            "link": "http://inter-lift.com.ua/",
-                            "description": [],
-                            "img": ""
-                        },
-                        {
-                            "name": "Klubnika",
-                            "type": "Informational",
-                            "link": "http://klubnika31.demowww.com/",
-                            "description": [],
-                            "img": ""
-                        }
-                    ]
-                },
-                {
-                    "categoryName": "miscellaneous",
-                    "categoryItems": []
                 }
             ]
         },
