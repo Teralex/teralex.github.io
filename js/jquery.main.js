@@ -82,18 +82,32 @@ jQuery(function () {
 
         });
     }
-    jQuery('#vmap').vectorMap({
-        map: 'world_en',
-        backgroundColor: null,
-        color: '#ffffff',
-        hoverOpacity: 0.7,
-        selectedColor: '#666666',
-        enableZoom: true,
-        showTooltip: true,
-        values: sample_data,
-        scaleColors: ['#C8EEFF', '#006491'],
-        normalizeFunction: 'polynomial'
-    });
+    jQuery('#vmap').vectorMap(
+            {
+                map: 'world_en',
+                backgroundColor: '#a5bfdd',
+                borderColor: '#818181',
+                borderOpacity: 0.25,
+                borderWidth: 1,
+                color: '#f4f3f0',
+                enableZoom: true,
+                hoverColor: '#c9dfaf',
+                hoverOpacity: null,
+                normalizeFunction: 'linear',
+                scaleColors: ['#b6d6ff', '#005ace'],
+                selectedColor: '#c9dfaf',
+                selectedRegions: null,
+                showTooltip: true,
+                onRegionClick: function (element, code, region)
+                {
+                    var message = 'You clicked "'
+                            + region
+                            + '" which has the code: '
+                            + code.toUpperCase();
+
+                    alert(message);
+                }
+            });
     jQuery('.js-base-block-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -1961,39 +1975,39 @@ JQVMap.prototype = {transX: 0, transY: 0, scale: 1, baseTransX: 0, baseTransY: 0
             case"m":
                 e += h[0], f += h[1], d = "t" + h.join(",");
                 break;
-                case"M":
+            case"M":
                 e = h[0], f = h[1], d = "m" + h.join(",");
                 break;
-                case"l":
+            case"l":
                 e += h[0], f += h[1], d = "r" + h.join(",");
                 break;
-                case"L":
+            case"L":
                 e = h[0], f = h[1], d = "l" + h.join(",");
                 break;
-                case"h":
+            case"h":
                 e += h[0], d = "r" + h[0] + ",0";
                 break;
-                case"H":
+            case"H":
                 e = h[0], d = "l" + e + "," + f;
                 break;
-                case"v":
+            case"v":
                 f += h[0], d = "r0," + h[0];
                 break;
-                case"V":
+            case"V":
                 f = h[0], d = "l" + e + "," + f;
                 break;
-                case"c":
+            case"c":
                 b = e + h[h.length - 4], c = f + h[h.length - 3], e += h[h.length - 2], f += h[h.length - 1], d = "v" + h.join(",");
                 break;
-                case"C":
+            case"C":
                 b = h[h.length - 4], c = h[h.length - 3], e = h[h.length - 2], f = h[h.length - 1], d = "c" + h.join(",");
                 break;
-                case"s":
+            case"s":
                 h.unshift(f - c), h.unshift(e - b), b = e + h[h.length - 4], c = f + h[h.length - 3], e += h[h.length - 2], f += h[h.length - 1], d = "v" + h.join(",");
                 break;
-                case"S":
+            case"S":
                 h.unshift(f + f - c), h.unshift(e + e - b), b = h[h.length - 4], c = h[h.length - 3], e = h[h.length - 2], f = h[h.length - 1], d = "c" + h.join(",")
-            }
+        }
         return d
     }).replace(/z/g, "")
 }, VectorCanvas.prototype.setSize = function (a, b) {
