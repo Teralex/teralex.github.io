@@ -70,5 +70,7 @@
 
 .slick-arrow.slick-hidden {
   display: none; }
-
+.slick-slide img{
+    display: initial;
+}
 /*# sourceMappingURL=slick.css.map */

@@ -1101,7 +1101,7 @@ ul.list {
 
 /* Home page slider */
 .gallery {
-  background: white }
+  background: #0f3146 url("../images/img1.jpg") 50% 26px no-repeat; }
   .gallery .decor {
     background: url("../images/decor.png") repeat-x;
     height: 26px; }
@@ -1110,8 +1110,8 @@ ul.list {
         height: 13px;
         background-size: auto 100%; } }
   .gallery .gallery-frame {
-    width: 800px;
-    height: 405px;
+    width: 600px;
+    height: 305px;
     padding: 12px 0 0;
     margin: 0 auto;
     background: rgba(142, 182, 224, 0.9); }
@@ -1131,7 +1131,7 @@ ul.list {
   .gallery .gallery-title {
     display: block;
     text-align: center;
-    color: #fff;
+    color: black;
     font-size: 30px;
     font-weight: 600;
     margin: -6px 0 0; }
@@ -1212,7 +1212,7 @@ ul.list {
       .gallery .slide-text {
         border-radius: 3px; } }
   .gallery.review {
-    background: #222a44; }
+    background: white; }
     .gallery.review.bg-wb {
       background: #1b1b1b url("../images/bg-slider-wb.png") 50% 0 repeat-y; }
     .gallery.review.bg-blue {
@@ -1237,6 +1237,7 @@ ul.list {
       margin: 0 auto; }
     .gallery.review .slick-slide {
       width: 100%;
+      text-align: center;
       height: auto;
       padding: 0 15px; }
     .gallery.review .slick-arrow {
@@ -1252,7 +1253,7 @@ ul.list {
 .slick-arrow {
   position: absolute;
   top: 28px;
-  left: 72px;
+  left: 20%;
   background: url("../images/gallery-btn.png") 50% 0 no-repeat;
   width: 18px;
   height: 31px;
@@ -1279,7 +1280,7 @@ ul.list {
 
 .slick-next {
   left: auto;
-  right: 72px;
+  right: 20%;
   transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
@@ -1291,7 +1292,7 @@ ul.list {
 
 .page-holder {
   overflow: hidden;
-  padding: 76px 0 0; }
+  padding: 26px 0 0; }
   @media (max-width: 767px) {
     .page-holder {
       padding: 0; } }
@@ -1370,9 +1371,8 @@ ul.list {
   @media (max-width: 767px) {
     .main-content {
       padding: 10px; } }
-  .main-content .content {
-    float: left;
-    width: 72.5%; }
+  .main-content .content {;
+    width: 100%; }
     @media only screen and (max-width: 820px) {
       .main-content .content {
         float: none;
@@ -3149,4 +3149,25 @@ textarea:focus, input:focus, .slick-slide:focus {
     overflow: auto;
     width: 100%;
     height: 100%;
+}
+
+.content-img{
+float: left;
+width: 50%;
+}
+
+.content-text{
+float: left;
+width: 50%;
+text-align: center;
+}
+.content-text ul{
+  padding: 10%;
+}
+.content-text li{
+  margin: 20px auto;
+}
+
+.article-subtitle {
+  margin: 20px auto;
 }
