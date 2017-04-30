@@ -1,7 +1,5 @@
  var l = document.location + "";
  l = l.replace(/%20/g, " ");
- var index = l.indexOf('?t=');
- if (index == -1) document.location = l + "?t=Kelvin :0)";
 
  var body = document.body;
  var html = document.documentElement;
@@ -214,9 +212,9 @@
  body_resize();
  timer();
  var text = [
-  'Lorem Ipsum',
+  "Lorem Ipsum ",
   'Some another text',
-  'Really long text here, ok? Not one word, even not 4'
+  'Really long text here, ok? Not one word, \n even not 4 aaa'
  ];
  var i = 0;
  
