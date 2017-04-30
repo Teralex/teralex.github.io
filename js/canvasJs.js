@@ -204,7 +204,7 @@
 //wordsTxt.addEventListener("change", init);
 
  wordsTxt.focus();
- wordsTxt.value = 'Привет Аня';
+ wordsTxt.value = 'Ань, серьезно';
 
  resHalfFloor = Math.floor(resolution / 2);
  resHalfCeil = Math.ceil(resolution / 2);
@@ -212,7 +212,7 @@
  body_resize();
  timer();
  var text = [
-  "ну правда, пожалуйста",
+  "ну правда, приезжай",
   'Иначе походу я напб.сб и начну спамить в вк XD',
   ' Обещаю цивильность)'
  ];
