@@ -204,7 +204,7 @@
 //wordsTxt.addEventListener("change", init);
 
  wordsTxt.focus();
- wordsTxt.value = 'Hello';
+ wordsTxt.value = 'Привет Аня';
 
  resHalfFloor = Math.floor(resolution / 2);
  resHalfCeil = Math.ceil(resolution / 2);
@@ -212,9 +212,9 @@
  body_resize();
  timer();
  var text = [
-  "Lorem Ipsum ",
-  'Some another text',
-  'Really long text here, ok? Not one word, \n even not 4 aaa'
+  "Приезжай, ибо 6 литров на троих много",
+  'Если надо, такси я оплачу, и утром проведу',
+  'Как минимум это будет забавно XD'
  ];
  var i = 0;
  
@@ -225,4 +225,4 @@ var g = setInterval( function() {
     if (i == text.length) {
         clearInterval(g);
     }
-} , 1500)
+} , 2000)
