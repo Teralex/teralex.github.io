@@ -204,7 +204,7 @@
 //wordsTxt.addEventListener("change", init);
 
  wordsTxt.focus();
- wordsTxt.value = 'Если есть предложения \n получше';
+ wordsTxt.value = 'Погнали ближе к вечеру в город';
 
  resHalfFloor = Math.floor(resolution / 2);
  resHalfCeil = Math.ceil(resolution / 2);
@@ -212,6 +212,7 @@
  body_resize();
  timer();
  var text = [
+ 'Если есть предложения \n получше',
   "Предлагай",
   'Выходной же, \n нехрен сычевать дома!'
  ];
