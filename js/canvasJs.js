@@ -204,7 +204,7 @@
 //wordsTxt.addEventListener("change", init);
 
  wordsTxt.focus();
- wordsTxt.value = 'Ань, серьезно';
+ wordsTxt.value = 'Если есть предложения \n получше';
 
  resHalfFloor = Math.floor(resolution / 2);
  resHalfCeil = Math.ceil(resolution / 2);
@@ -212,9 +212,8 @@
  body_resize();
  timer();
  var text = [
-  "Лорем ипсум",
-  'Текст 2',
-  ' текст 3'
+  "Предлагай",
+  'Выходной же, \n зачем сычевать дома'
  ];
  var i = 0;
  
