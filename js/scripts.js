@@ -361,16 +361,9 @@ $(document).ready(function(){
 	$('.list').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		arrows: true,
 		fade: true,
 		autoplay: true,
 		autoplaySpeed: 4000,
-		responsive: [{
-			breakpoint: 767,
-			settings: {
-				arrows: false,
-			}
-		}]
 	});
 	
 

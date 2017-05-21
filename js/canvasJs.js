@@ -204,7 +204,7 @@
 //wordsTxt.addEventListener("change", init);
 
  wordsTxt.focus();
- wordsTxt.value = 'Погнали ближе к вечеру в город';
+ wordsTxt.value = 'Ну так что?';
 
  resHalfFloor = Math.floor(resolution / 2);
  resHalfCeil = Math.ceil(resolution / 2);
@@ -212,10 +212,9 @@
  body_resize();
  timer();
  var text = [
- 'Заточим вредной еды в Маке, может в парк двинем',
- 'Если есть предложения \n получше',
-  "Предлагай",
-  'Выходной же, \n нехрен сычевать дома!'
+ 'Может коньяка с колой?',
+ 'После тяжелых рабочих часов)',
+  "И, не стесняйся, бери пиццу)"
  ];
  var i = 0;
  
