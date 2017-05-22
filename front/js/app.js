@@ -7,8 +7,8 @@ $(document).ready(function () {
     });
     var step = 1;
     function setStep(el) {
-        $("#step" + step).removeClass('active');
-        $("#step" + step).find('img').attr("src","images/arr.png");;
+        $("#step" + step).removeClass('active').addClass('closed');
+        $("#step" + step).find('img').attr("src","images/arr_down.png");;
         
         step = Number(el.id.replace(/\D+/g, ""))
 

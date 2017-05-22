@@ -212,8 +212,7 @@ aside {display:block;}
     background: -ms-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 100%);
     background: radial-gradient(ellipse at center,  rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 100%);
 }
-.banner > img,
-.banner .banner-hold > img {display: none;}
+
 .banner .container {
     position: relative;
     z-index: 2;
@@ -224,7 +223,7 @@ aside {display:block;}
     height: 80vh;
     position: absolute;
     top: 0;
-    right: 100px;
+    right: 80px;
     text-align: left;
 }
 .banner.type2 .row {
@@ -269,15 +268,23 @@ aside {display:block;}
     font-size: 18px;
     line-height: 28px;
 }
-.banner.type3 button{
+.banner.type3 .button{
     width: 30%;
     font-size: 16px;
     color: #fff;
-    padding: 2% 0;
+    padding: 2% 5%;
     background: #339999;
     border: none;
     font-family: HelveticaNeueCyr-Bold;
 }
+.banner.type3 .button:hover{
+    color: #fff;
+    padding: 2% 6%;
+    background: #339999;
+    border: none;
+    font-family: HelveticaNeueCyr-Bold;
+}
+
 .banner.with-brand .col {
     padding-bottom: 77px;
 }
@@ -304,7 +311,7 @@ aside {display:block;}
     text-shadow: 0 0 38px #000;
 }
 .type1{
-    background: url(../images/background.png) 100% 100%  no-repeat ;
+    background: url(../images/bg2.png) 100% 100%  no-repeat ;
     background-size: cover;
 }
 .type2{
@@ -406,9 +413,19 @@ aside {display:block;}
     color: #8ecdf6;
 }
 .active .inv-circle::before{
-    background: #8ecdf6;
+    background: linear-gradient(to right, #8ecdf6, #6694b2);
 }
 .active .inv-circle::after{
+    display: none;
+}
+
+.closed .inv-circle{
+    color: #8ecdf6;
+}
+.closed .inv-circle::before{
+    background: #8ecdf6;
+}
+.closed .inv-circle::after{
     display: none;
 }
 h2 {margin: 0;}
