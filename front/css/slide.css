@@ -144,10 +144,11 @@ article img {
     position: absolute;
 }
 .type2 #active{
-    margin: 10% 90% 0;
+    margin: 10% 0% 0;
+    right: 10%;
 }
 #active label {
-    background: url('../images/arrow.png') no-repeat;
+
     float: right;
 
 

@@ -6,6 +6,8 @@ $(document).ready(function () {
             setStep(this);
         }
     });
+
+ 
     var step = 1;
     function setStep(el) {
         $("#step" + step).removeClass('active').addClass('closed');
