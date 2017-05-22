@@ -440,10 +440,10 @@ h4 {margin: 5px;}
 
 .cinema {
     position: absolute;
-    top: 0%;
+    top: 2.5%;
     z-index: -1;
-    left: 15%;
-    width: 75%;
+    left: 5%;
+    width: 55%;
 }
 
 .arrow {
