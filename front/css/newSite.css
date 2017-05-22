@@ -331,6 +331,12 @@ aside {display:block;}
     background: #e8e8e8 50% 50% no-repeat;
 }
 
+#page .steps{
+    height: 10vh;
+    min-height: 10vh; 
+    padding: 0 15%;
+}
+
 .step {
     letter-spacing: 1px;
     float: left;
@@ -343,6 +349,13 @@ aside {display:block;}
     font-size: 24px;
     z-index: 3;
     color: #8c8d8d;
+}
+
+#page .step{
+    padding-top: 1.5%;
+}
+.step h4 {
+    margin-top: 15px;
 }
 .text {
 
@@ -373,12 +386,18 @@ aside {display:block;}
     color: #d0d0d0; 
     position: absolute;
     text-align: center;
-    right: -3%;
+    right: -4%;
     z-index: 1;
     top: 40%;
     z-index: auto;
     padding: 1%; 
 }
+
+#page .inv-circle{
+    top: 35%;
+    right: -3%;
+}
+
 .inv-circle::before {
     content: '';
     position: absolute;
@@ -467,4 +486,90 @@ h4 {margin: 5px;}
 
 #step3 {
     z-index: 2;
+}
+#page .content {
+    height: 80vh;
+    padding: 0% 10%;
+}
+#page .heading {
+    padding: 1% 10%;
+    width: 100%;
+    height: 5vh;
+
+}
+
+
+.search {
+    position: relative;
+    color: #43a7a9;
+    font-size: 16px;
+    width: 250px;
+    float: left;
+}
+
+.search input {
+    width: 250px;
+    height: 32px;
+    border: none;
+    background: #e8e8e8;
+    border-radius: 15px;
+
+}
+
+.search input { text-indent: 32px;}
+.search .fa-search { 
+    position: absolute;
+    top: 7px;
+    right: 10px;
+}
+#page input{
+    display: block;
+}
+#page .footer {
+    background: #e8e8e8 50% 50% no-repeat;
+    width: 100%;
+    height: 5vh;
+}
+.menuheading{
+    float: left;
+    margin-top: 5px;
+}
+
+.filter{
+    float: right;
+
+}
+
+.filter .btn-link{
+    color: #8c8d8d;
+}
+
+#collImg{
+    width: 250px;
+    border: 4px solid #e8e8e8;
+    margin-top: 3%;
+    font-weight: bold;
+
+}
+#collImg .list{
+    height: 60vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: center;
+}
+#collImg .item{
+    padding: 5%;
+}
+#collImg .item img{
+    width: 90%;
+}
+
+#collImg .active{
+    background: #8ecdf6 50% 50% no-repeat;
+    color: #fff;
+    box-shadow: none;
+}
+
+#collImg .heading{
+    padding: 5% 10%;
 }
