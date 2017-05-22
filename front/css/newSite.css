@@ -173,6 +173,10 @@ aside {display:block;}
     height:100%;
 }
 
+.type2 img{
+    width: 100%;
+}
+
 .banner-hold .slick-arrow:after {
     bottom: 9px;
     -webkit-transform: rotate(45deg);
@@ -313,7 +317,7 @@ aside {display:block;}
     background-size: cover;
 }
 .type2{
-    background: url(../images/Aop_10001.png) 100% 100%  no-repeat ;
+    background: url(../images/background-w2.png) 100% 100%  no-repeat ;
     background-size: cover;
 }
 .type3{
