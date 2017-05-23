@@ -274,16 +274,17 @@ aside {display:block;}
     width: 30%;
     font-size: 16px;
     color: #fff;
-    padding: 2% 5%;
+    padding: 3% 5%;
     background: #339999;
     border: none;
     font-family: HelveticaNeueCyr-Bold;
 }
 .banner.type3 .button:hover{
     color: #fff;
-    padding: 2% 6%;
+    padding: 3% 6%;
     background: #339999;
     border: none;
+    text-decoration: none;
     font-family: HelveticaNeueCyr-Bold;
 }
 
@@ -313,7 +314,7 @@ aside {display:block;}
     text-shadow: 0 0 38px #000;
 }
 .type1{
-    background: url(../images/bg2.png) 100% 100%  no-repeat ;
+    background: url(../images/bg2.png) 50% 30%  no-repeat ;
     background-size: cover;
 }
 .type2{
@@ -417,7 +418,9 @@ aside {display:block;}
     width: 50%;
     margin-left: 2%;
 }
-
+.closed{
+    color: #464646;
+}
 .closed .inv-circle  img{
     width: 80%;
     margin-left: 2%;
@@ -708,4 +711,8 @@ h4 {margin: 5px;}
 .trash:hover img{
     content:url("../images/trash.png");
 
+}
+
+.item-img {
+     background: url(../images/third.png) 100% 100%  no-repeat;
 }
