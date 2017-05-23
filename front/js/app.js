@@ -16,8 +16,14 @@ $(document).ready(function () {
 
         step = Number(el.id.replace(/\D+/g, ""))
 
+        if (step == 2) {
+            $('.type2').css({"background" : "url(images/GIF_ok6.gif) 100% 100%  no-repeat", "background-size" : "cover"});
+        }
+
         $("#step" + step).addClass('active');
         $("#step" + step).find('img').attr("src", "images/active_arr.png");
-        ;
+        
+
+
     }
 });

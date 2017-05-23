@@ -250,7 +250,7 @@ aside {display:block;}
     vertical-align: inherit;
     padding: 25% 0;
 }
-.banner.type3 .col .container{
+.banner.type3 .col .holder{
     padding: 2.5% 15%;
     background: #fff;
     border: 4px solid #339999;
@@ -317,8 +317,7 @@ aside {display:block;}
     background-size: cover;
 }
 .type2{
-    background: url(../images/GGGGG.gif) 100% 100%  no-repeat ;
-    background-size: cover;
+
 }
 .type3{
     background: url(../images/third.png) 100% 100%  no-repeat ;
@@ -623,7 +622,9 @@ h4 {margin: 5px;}
 
 .item-info .heading img{
     width: 100%;
-    height: 100%;
+    height: 60%;
+    vertical-align: middle;
+    margin-top: 25%;
 }
 
 .item-info .button{
