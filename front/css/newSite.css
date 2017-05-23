@@ -576,8 +576,10 @@ h4 {margin: 5px;}
 }
 #collImg .item{
     padding: 5%;
+    position: relative;
+    z-index: 1;
 }
-#collImg .item img{
+#collImg .item-img{
     width: 90%;
 }
 
@@ -600,7 +602,7 @@ h4 {margin: 5px;}
     float: right;
 }
 #images .item{
-    width: 350px;
+    width: 32%;
     margin: 0% 0% 1% 1%;
     float: left;
     height: 350px;
@@ -609,29 +611,41 @@ h4 {margin: 5px;}
     position: relative;
 }
 
-#images .item-info {
+.item .item-info {
     width: 100%;
     position: absolute;
     text-align: left;
     height: 100%;
     top: 0;
+    left: 0;
 }
 
+#collImg .item-info .heading {
+    padding: 0;
+    height: 3vh;
+}
+
+#collImg .item-info .heading a{
+    width: 15%;
+    float: right;
+    text-align: center;
+}
+
+
 .item-info .heading a{
-    width: 10%;
+    width: 12%;
     float: right;
     height: 100%;
+        text-align: center;
 }
 
 .item-info .heading .pencil{
     margin-right: 2%;
 }
 
-.item-info .heading img{
-    width: 100%;
-    height: 60%;
-    vertical-align: middle;
-    margin-top: 25%;
+.item-info .heading img{ 
+       height: 75%;
+    margin-top: 15%;
 }
 
 .item-info .button{
@@ -687,7 +701,7 @@ h4 {margin: 5px;}
     position: relative;
     padding: 2.5% 0;
     float: left;
-    width: 75%;
+    width: 72%;
     padding-left: 5%; 
 }
 
@@ -713,6 +727,19 @@ h4 {margin: 5px;}
 
 }
 
-.item-img {
-     background: url(../images/third.png) 100% 100%  no-repeat;
+#collImg .mask {
+    position: absolute;
+    height: 60%;
+    width: 56%;
+    z-index: -1;
+    top: 13%;
+    left: 23%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.mask img{
+  
+    max-height: 100%;
+    width: initial;
 }

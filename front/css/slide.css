@@ -154,10 +154,6 @@ article img {
 
 }
 
-#active label:hover {
-    background: #ccc;
-    border-color: #777 !important;
-}
 
 #controls label:hover {
     opacity: 0.8;
