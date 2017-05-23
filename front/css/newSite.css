@@ -532,6 +532,8 @@ h4 {margin: 5px;}
     background: #e8e8e8 50% 50% no-repeat;
     width: 100%;
     height: 5vh;
+    padding: 15px 10%;
+    color: #8c8d8d;
 }
 .menuheading{
     float: left;
@@ -542,6 +544,16 @@ h4 {margin: 5px;}
 .filter{
     float: right;
 
+}
+
+#page .left{
+    width: 20%;
+    float: left;
+}
+
+#page .right{
+    width: 20%;
+    float: right;
 }
 
 .filter .btn-link{
@@ -591,9 +603,41 @@ h4 {margin: 5px;}
     float: left;
     height: 350px;
     overflow: hidden;
-    line-height: 200px;
     text-align: center;
     position: relative;
+}
+
+#images .item-info {
+    width: 100%;
+    position: absolute;
+    text-align: left;
+    height: 100%;
+    top: 0;
+}
+
+.item-info .heading a{
+    width: 10%;
+    float: left;
+    height: 100%;
+}
+
+.item-info .heading img{
+    width: 100%;
+    height: 100%;
+}
+
+.item-info .button{
+    width: 35%;
+    font-size: 20px;
+    color: #43a7a9;
+    padding: 3% 5%;
+    background: white;
+    border: none;
+    bottom: 12%;
+    position: absolute;
+    left: 20%;
+    text-align: center;
+    box-shadow: 1px 1px 4px #666;
 }
 #images  .new{
     border: 4px dashed #43a7a9;
@@ -617,4 +661,24 @@ h4 {margin: 5px;}
 #images .text h4{
     margin-top: 15px;
     color: #43a7a9;
+}
+
+#images .heading{
+    padding: 0;
+    vertical-align: middle;
+    height: 15%;
+    background: rgba(255, 255, 255, 0.4);
+    color: #43a7a9;
+    font-size: 20px;
+}
+#images .foot{
+    height: 85%;
+
+}
+#images .item-text{
+    position: relative;
+    padding: 4% 0;
+    float: left;
+    width: 80%;
+    padding-left: 5%; 
 }
