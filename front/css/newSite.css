@@ -618,6 +618,7 @@ h4 {margin: 5px;}
     width: 10%;
     float: left;
     height: 100%;
+    margin-right: 2.5%;
 }
 
 .item-info .heading img{
@@ -636,7 +637,7 @@ h4 {margin: 5px;}
     border: none;
     bottom: 12%;
     position: absolute;
-    left: 20%;
+    left: 35%;
     text-align: center;
     box-shadow: 1px 1px 4px #666;
 }
@@ -680,6 +681,14 @@ h4 {margin: 5px;}
     position: relative;
     padding: 4% 0;
     float: left;
-    width: 80%;
+    width: 75%;
     padding-left: 5%; 
+}
+
+.item .item-info{
+    display: none;
+}
+
+.item:hover .item-info {
+    display: block;
 }
