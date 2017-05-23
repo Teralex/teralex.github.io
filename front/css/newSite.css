@@ -616,9 +616,12 @@ h4 {margin: 5px;}
 
 .item-info .heading a{
     width: 10%;
-    float: left;
+    float: right;
     height: 100%;
-    margin-right: 2.5%;
+}
+
+.item-info .heading .pencil{
+    margin-right: 2%;
 }
 
 .item-info .heading img{
@@ -668,7 +671,7 @@ h4 {margin: 5px;}
 #images .heading{
     padding: 0;
     vertical-align: middle;
-    height: 15%;
+    height: 12%;
     background: rgba(255, 255, 255, 0.4);
     color: #43a7a9;
     font-size: 20px;
@@ -679,7 +682,7 @@ h4 {margin: 5px;}
 }
 #images .item-text{
     position: relative;
-    padding: 4% 0;
+    padding: 2.5% 0;
     float: left;
     width: 75%;
     padding-left: 5%; 
@@ -691,4 +694,18 @@ h4 {margin: 5px;}
 
 .item:hover .item-info {
     display: block;
+}
+.pencil:hover{
+      background: #43a7a9;
+}
+.pencil:hover img{
+    content:url("../images/pencil_white.png");
+  
+}
+.trash:hover{
+       background: #43a7a9; 
+}
+.trash:hover img{
+    content:url("../images/trash.png");
+
 }
