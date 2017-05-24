@@ -45,7 +45,6 @@ body {
 
 h2 {
     margin: 40px 0 25px;
-    border-bottom: 1px solid #bbb;
     padding: 0 0 10px;
 }
 
@@ -139,7 +138,7 @@ article img {
 }
 
 #active {
-    margin: 23% 73% 0;
+    margin: 3% 73% 0;
     text-align: center;
     position: absolute;
 }
