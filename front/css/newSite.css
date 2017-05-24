@@ -230,7 +230,7 @@ aside {display:block;}
 }
 .banner.type2 .row {
     text-align: center;
-    right: 40%;
+    right: 42%;
 }
 .banner.type3 .row {
     text-align: center;
@@ -361,14 +361,14 @@ aside {display:block;}
     margin-top: 1vh;
 }
 .text {
-
-    font-size: 14px;
+ font-family: HelveticaNeueCyr-Bold;
+    font-size: 20px;
     line-height: 22px;
     padding-top: 10%;
 }
 
 .type2 .text{
-    font-size: 22px;
+    font-size: 20px;
     line-height: 30px;
     letter-spacing: 1.5px;
 }
