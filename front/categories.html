@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>AOP</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+                <link rel="stylesheet" href="css/jquery-ui.css">   
+        <link rel="stylesheet" href="css/slide.css">       
+        <link rel="stylesheet" href="css/newSite.css">
+
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/scroll/jquery.nicescroll.js"></script>
+        <script src="js/app.js"></script>
+
+    </head>
+    <body>
+        <article id="page">
+            <div class='steps'>
+                <a class="button-back" href='collections.html'> <span class="fa fa-arrow-left"></span> Back </a>
+                <div class="step closed" id='step1'>
+                    <div >
+                        <h3> STEP 1 </h3>
+                        <h4> Select Image </h4>
+                    </div>
+                    <div class="inv-circle">
+                        <img src="images/arr_down.png" alt=">>">
+                    </div>
+                </div>
+                <div class="step active" id='step2'>
+                    <div>
+                        <h3> STEP 2 </h3>
+                        <h4> Customize Products </h4>
+                    </div>
+                    <div class="inv-circle">
+                        <img src="images/active_arr.png" alt=">>">
+                    </div>
+                </div>
+                <div class="step" id='step3'>
+                    <div >
+                        <h3> STEP 3 </h3>
+                        <h4> Publish Products </h4>
+                    </div>
+                </div>
+            </div>
+            <div class='heading'>
+                <div class="menuleft">
+                        <span>  Selected Image</span>
+                </div>
+                <div class='heading-content row'>
+                    <div class='col-xs-60'>
+                        <ul class='menuheading'>
+                            <li>
+                                <a href='#'> <span class="fa fa-power-off"></span>Everythyng Enabled </a>
+                            </li>
+                        </ul>
+                        <div class='filter'>
+                            <div class="btn-group">
+                                <button type="button" class="dropdown-toggle btn-link btn-language" data-toggle="dropdown">
+                                    <span class="hidden-xs normal-lang"> Sort by<span class="caret"></span></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                    <li><a href="#">Filter1</a></li>
+                                    <li><a href="#">Filter2</a></li>
+                                </ul>
+                            </div>
+                            <a>
+                                <span class="fa fa-th-large"></span>
+                            </a>
+                            <a>
+                                <span class="fa fa-th-list"></span>
+                            </a>               
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <article id="categories">
+                <div class='content'>
+                    <div class='leftSide'>
+                        <div class="selectedImg">
+                            <img src="images/lemon.jpg">
+                        </div>
+                        <div class="left-content">
+                        <div class="heading">
+                            <span> Product filter</span>
+                        </div>
+                        <div class="list">
+                        <div class="part categories">
+                            <div class="item active">
+                                <div class="icon"><span class="fa fa-circle"></span></div>
+                                <div class="category">All</div>
+                                <div class="count">39</div>
+                            </div>
+                             <div class="item">
+                                <div class="icon"><span class="fa fa-circle"></span></div>
+                                <div class="category">Apparel</div>
+                                <div class="count">5</div>
+                            </div>
+                            <div class="item">
+                                <div class="icon"><span class="fa fa-circle"></span></div>
+                                <div class="category">Phone $ Tablet Cases</div>
+                                <div class="count">5</div>
+                            </div>
+                            <div class="item">
+                                <div class="icon"><span class="fa fa-circle"></span></div>
+                                <div class="category">Cases</div>
+                                <div class="count">8</div>
+                            </div>
+                             <div class="item">
+                                <div class="icon"><span class="fa fa-circle"></span></div>
+                                <div class="category">Homeware</div>
+                                <div class="count">2</div>
+                            </div>
+                            <div class="item">
+                                <div class="icon"><span class="fa fa-circle"></span></div>
+                                <div class="category">Wall Decor</div>
+                                <div class="count">5</div>
+                            </div>
+                            <div class="item">
+                                <div class="icon"><span class="fa fa-circle"></span></div>
+                                <div class="category">Accesories</div>
+                                <div class="count">9</div>
+                            </div>
+                            <div class="item">
+                                <div class="icon"><span class="fa fa-circle"></span></div>
+                                <div class="category">Prints</div>
+                                <div class="count">6</div>
+                            </div>
+                        </div>
+                         <div class="part sex">
+                            <div class="item">
+                                <div class="icon"><img src="images/radio.png"></div>
+                                <div class="category">Unisex</div>
+                            </div>
+                                               <div class="item">
+                                <div class="icon"><img src="images/radio.png"></div>
+                                <div class="category">Male</div>
+                            </div>
+                                               <div class="item">
+                                <div class="icon"><img src="images/radio.png"></div>
+                                <div class="category">Female</div>
+                            </div>
+                               <div class="item">
+                                <div class="icon"><img src="images/radio.png"></div>
+                                <div class="category">Null</div>
+                            </div>
+                         </div>
+                        <div class="part range">
+                       
+                                <div class="title">
+                                    <span>Price range:</span>
+                                <div class="btn-group">
+                                <button type="button" class="dropdown-toggle btn-link btn-language" data-toggle="dropdown">
+                                    <span class="hidden-xs normal-lang"> $<span class="caret"></span></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                    <li><a href="#">#</a></li>
+                                    <li><a href="#">*</a></li>
+                                </ul>
+                            </div>
+                                </div>
+                                <div id="slider-range"></div>
+                                <input type="text" id="amount" readonly>
+
+                          </div>
+                         <div class="part brands">
+                            <div class="title">
+                                    <span>Brands:</span>
+                            </div>
+
+                            <div class="item">
+                                <div class="icon"><img src="images/radio.png"></div>
+                                <div class="category">All</div>
+                            </div>
+                                               <div class="item">
+                                <div class="icon"><img src="images/radio.png"></div>
+                                <div class="category">American Apparel</div>
+                            </div>
+                                               <div class="item">
+                                <div class="icon"><img src="images/radio.png"></div>
+                                <div class="category">Subli</div>
+                            </div>
+                               <div class="item">
+                                <div class="icon"><img src="images/radio.png"></div>
+                                <div class="category">Alloverprint.it</div>
+                            </div>
+                         </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div id='images'>
+                        <div class="list">
+                            <div class="item">
+                                <div class="preview">
+                                      <img src="images/tshirt.jpg">
+                                </div>
+                                <div class="product-info">
+                                    <div class="heading">
+                                        <div class="item-text">
+                                             <span> Lemon</span> Item Name 
+                                         </div>
+                                                <a href='#'> <span class="fa fa-power-off"></span>Enabled </a>
+                                    </div>
+                                    <div class="params">
+                                        <div class="param">
+                                            <div class="name">
+                                                Brand
+                                            </div>
+                                            <div class="value">
+                                                AWDis
+                                            </div>
+                                        </div>
+                                         <div class="param">
+                                            <div class="name">
+                                                Category
+                                            </div>
+                                            <div class="value">
+                                                Apparel
+                                            </div>
+                                        </div>
+                                          <div class="param">
+                                            <div class="name">
+                                                Peoduct Code
+                                            </div>
+                                            <div class="value">
+                                                JS001
+                                            </div>
+                                        </div>
+                                          <div class="param">
+                                            <div class="name">
+                                                Gender Specification
+                                            </div>
+                                            <div class="value">
+                                                Unisex
+                                            </div>
+                                        </div>
+                                          <div class="param">
+                                            <div class="name">
+                                                Wholesale Price
+                                            </div>
+                                            <div class="value">
+                                                $ 12.85
+                                            </div>
+                                        </div>
+                                          <div class="param">
+                                            <div class="name">
+                                                Other
+                                            </div>
+                                            <div class="value">
+                                                Text
+                                            </div>
+                                        </div>
+                                        <div class="param">
+                                            <div class="name">
+                                                Other Category
+                                            </div>
+                                            <div class="value">
+                                                Text
+                                            </div>
+                                        </div>
+                                             <div class="param">
+                                            <div class="name">
+                                                Other
+                                            </div>
+                                            <div class="value">
+                                                Text
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="button" href="#">Edit</a>
+                                </div>
+                            </div>
+                             <div class="item inactive">
+                                <div class="preview">
+                                      <img src="images/podushka.jpg">
+                                </div>
+                                <div class="product-info">
+                                    <div class="heading">
+                                        <div class="item-text">
+                                             <span> Lemon</span> Item Name 
+                                         </div>
+                                                <a href='#'> <span class="fa fa-power-off"></span>Enabled </a>
+                                    </div>
+                                    <div class="params">
+                                        <div class="param">
+                                            <div class="name">
+                                                Brand
+                                            </div>
+                                            <div class="value">
+                                                AWDis
+                                            </div>
+                                        </div>
+                                         <div class="param">
+                                            <div class="name">
+                                                Category
+                                            </div>
+                                            <div class="value">
+                                                Apparel
+                                            </div>
+                                        </div>
+                                          <div class="param">
+                                            <div class="name">
+                                                Peoduct Code
+                                            </div>
+                                            <div class="value">
+                                                JS001
+                                            </div>
+                                        </div>
+                                          <div class="param">
+                                            <div class="name">
+                                                Gender Specification
+                                            </div>
+                                            <div class="value">
+                                                Unisex
+                                            </div>
+                                        </div>
+                                          <div class="param">
+                                            <div class="name">
+                                                Wholesale Price
+                                            </div>
+                                            <div class="value">
+                                                $ 12.85
+                                            </div>
+                                        </div>
+                                          <div class="param">
+                                            <div class="name">
+                                                Other
+                                            </div>
+                                            <div class="value">
+                                                Text
+                                            </div>
+                                        </div>
+                                        <div class="param">
+                                            <div class="name">
+                                                Other Category
+                                            </div>
+                                            <div class="value">
+                                                Text
+                                            </div>
+                                        </div>
+                                             <div class="param">
+                                            <div class="name">
+                                                Other
+                                            </div>
+                                            <div class="value">
+                                                Text
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="button" href="#">Edit</a>
+                                </div>
+                            </div> 
+                             <div class="item">
+                                <div class="preview">
+                                      <img src="images/shoes.jpg">
+                                </div>
+                                <div class="product-info">
+                                    <div class="heading">
+                                        <div class="item-text">
+                                             <span> Lemon</span> Item Name 
+                                         </div>
+                                                <a href='#'> <span class="fa fa-power-off"></span>Enabled </a>
+                                    </div>
+                                    <div class="params">
+                                        <div class="param">
+                                            <div class="name">
+                                                Brand
+                                            </div>
+                                            <div class="value">
+                                                AWDis
+                                            </div>
+                                        </div>
+                                         <div class="param">
+                                            <div class="name">
+                                                Category
+                                            </div>
+                                            <div class="value">
+                                                Apparel
+                                            </div>
+                                        </div>
+                                          <div class="param">
+                                            <div class="name">
+                                                Peoduct Code
+                                            </div>
+                                            <div class="value">
+                                                JS001
+                                            </div>
+                                        </div>
+                                          <div class="param">
+                                            <div class="name">
+                                                Gender Specification
+                                            </div>
+                                            <div class="value">
+                                                Unisex
+                                            </div>
+                                        </div>
+                                          <div class="param">
+                                            <div class="name">
+                                                Wholesale Price
+                                            </div>
+                                            <div class="value">
+                                                $ 12.85
+                                            </div>
+                                        </div>
+                                          <div class="param">
+                                            <div class="name">
+                                                Other
+                                            </div>
+                                            <div class="value">
+                                                Text
+                                            </div>
+                                        </div>
+                                        <div class="param">
+                                            <div class="name">
+                                                Other Category
+                                            </div>
+                                            <div class="value">
+                                                Text
+                                            </div>
+                                        </div>
+                                             <div class="param">
+                                            <div class="name">
+                                                Other
+                                            </div>
+                                            <div class="value">
+                                                Text
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="button" href="#">Edit</a>
+                                </div>
+                            </div>
+                             <div class="item">
+                                <div class="preview">
+                                      <img src="images/bag.jpg">
+                                </div>
+                                <div class="product-info">
+                                    <div class="heading">
+                                        <div class="item-text">
+                                             <span> Lemon</span> Item Name 
+                                         </div>
+                                                <a href='#'> <span class="fa fa-power-off"></span>Enabled </a>
+                                    </div>
+                                    <div class="params">
+                                        <div class="param">
+                                            <div class="name">
+                                                Brand
+                                            </div>
+                                            <div class="value">
+                                                AWDis
+                                            </div>
+                                        </div>
+                                         <div class="param">
+                                            <div class="name">
+                                                Category
+                                            </div>
+                                            <div class="value">
+                                                Apparel
+                                            </div>
+                                        </div>
+                                          <div class="param">
+                                            <div class="name">
+                                                Peoduct Code
+                                            </div>
+                                            <div class="value">
+                                                JS001
+                                            </div>
+                                        </div>
+                                          <div class="param">
+                                            <div class="name">
+                                                Gender Specification
+                                            </div>
+                                            <div class="value">
+                                                Unisex
+                                            </div>
+                                        </div>
+                                          <div class="param">
+                                            <div class="name">
+                                                Wholesale Price
+                                            </div>
+                                            <div class="value">
+                                                $ 12.85
+                                            </div>
+                                        </div>
+                                          <div class="param">
+                                            <div class="name">
+                                                Other
+                                            </div>
+                                            <div class="value">
+                                                Text
+                                            </div>
+                                        </div>
+                                        <div class="param">
+                                            <div class="name">
+                                                Other Category
+                                            </div>
+                                            <div class="value">
+                                                Text
+                                            </div>
+                                        </div>
+                                             <div class="param">
+                                            <div class="name">
+                                                Other
+                                            </div>
+                                            <div class="value">
+                                                Text
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="button" href="#">Edit</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </article>
+                <div class='footer'>
+                    <div class="right">
+                        Showing 1-5 of 5 products
+                    </div>
+                </div>
+        </article>
+    </body>
+</html>

@@ -23,8 +23,22 @@ $(document).ready(function () {
         },
     });
 
-    $(".list").niceScroll({cursorwidth: '6px', cursorfixedheight: '50', cursorcolor: "#e8e8e8", cursoropacitymax: '0.4', autohidemode: true, zindex: 999});
-    $("#images").niceScroll({cursorwidth: '6px', cursorfixedheight: '50', cursorcolor: "#e8e8e8", cursoropacitymax: '0.4', autohidemode: true, zindex: 999});
+    $(".list").niceScroll({cursorwidth: '6px', cursorfixedheight: '50', cursorcolor: "#8c8d8d", cursoropacitymax: '0.4', autohidemode: true, zindex: 999});
+    $("#collections #images").niceScroll({cursorwidth: '6px', cursorfixedheight: '50', cursorcolor: "#8c8d8d", cursoropacitymax: '0.4', autohidemode: true, zindex: 999});
+
+   $( "#slider-range" ).slider({
+      range: true,
+      min: 0,
+      max: 500,
+      values: [ 75, 300 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+      }
+    });
+
+    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+
 
     var step = 1;
     function setStep(el) {
@@ -35,7 +49,7 @@ $(document).ready(function () {
         step = Number(el.id.replace(/\D+/g, ""))
 
         if (step == 2) {
-            $('.type2').css({"background": "url(images/GIF_ok7.gif) 100% 100%  no-repeat", "background-size": "cover"});
+            $('.type2').css({"background": "url(images/GIF_ok8.gif) 100% 100%  no-repeat", "background-size": "cover"});
         }
 
         $("#step" + step).addClass('active');
