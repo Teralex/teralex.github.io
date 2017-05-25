@@ -717,7 +717,7 @@ h4 {margin: 5px;}
     height: 12%;
     background: rgba(255, 255, 255, 0.4);
     color: #43a7a9;
-    font-size: 20px;
+    font-size: 2vh;
     width: 100%;
 }
 #images .foot{
@@ -1027,12 +1027,13 @@ h4 {margin: 5px;}
 #categories #images .params{
     padding-top: 3vh;
     color: #d0d0d0;
+    height: 60%;
 }
 
 .params .param {
     width: 50%;
     float: left;
-    font-size: 18px;
+    font-size: 2vh;
 }
 
 .name {
@@ -1060,14 +1061,13 @@ h4 {margin: 5px;}
     color: #fff;
     padding: 0.5% 0%;
     border: none;
-    bottom: 5%;
-    position: absolute;
-    right: 2.5%;
+    position: relative;
     text-align: center;
     box-shadow: 1px 1px 4px #666;
     text-decoration: none;
     font-family: HelveticaNeueCyr-Bold;
     background: #43a7a9;
+    float: right;
 }
 
 .product-info .button:hover{
