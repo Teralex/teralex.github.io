@@ -318,7 +318,7 @@ aside {display:block;}
     background-size: cover;
 }
 .type2{
- background: url(../images/second.png) 100% 100%  no-repeat ;
+ background: url(../images/bg4_1.png) 100% 100%  no-repeat ;
 }
 .type3{
     background: url(../images/bg4.png) 100% 100%  no-repeat ;
@@ -1025,7 +1025,7 @@ h4 {margin: 5px;}
 }
 
 #categories #images .params{
-    padding-top: 3vh;
+    padding-top: 2vh;
     color: #d0d0d0;
     height: 60%;
 }
@@ -1068,6 +1068,7 @@ h4 {margin: 5px;}
     font-family: HelveticaNeueCyr-Bold;
     background: #43a7a9;
     float: right;
+    height: 3vh;
 }
 
 .product-info .button:hover{
