@@ -1,0 +1,101 @@
+{
+  "images": [
+    {
+      "asset_size": {
+        "bleed": {
+          "bottom": 0, 
+          "left": 0, 
+          "right": 0, 
+          "top": 0
+        }, 
+        "height": 1110, 
+        "width": 2685
+      }, 
+      "background": "product_images/mug_11oz/advert1/background.png", 
+      "height": 628, 
+      "masks": [
+        {
+          "align": "centre", 
+          "blend_mode": "multiply", 
+          "enclosing_quadrilateral": {
+            "bottom_left": [
+              -81, 
+              26
+            ], 
+            "bottom_right": [
+              1336, 
+              26
+            ], 
+            "size": {
+              "height": 586, 
+              "width": 1417
+            }, 
+            "top_left": [
+              -81, 
+              611
+            ], 
+            "top_right": [
+              1336, 
+              611
+            ]
+          }, 
+          "mask": "product_images/mug_11oz/advert1/mask_multiply.png"
+        }
+      ], 
+      "name": "advert1", 
+      "width": 1200
+    }, 
+    {
+      "asset_size": {
+        "bleed": {
+          "bottom": 0, 
+          "left": 0, 
+          "right": 0, 
+          "top": 0
+        }, 
+        "height": 1110, 
+        "width": 2685
+      }, 
+      "background": "product_images/mug_11oz/cover/background.png", 
+      "displace_background_image": "product_images/mug_11oz/cover/displace_background_image.png", 
+      "displace_foreground_image": "product_images/mug_11oz/cover/displace_foreground_image.png", 
+      "foreground": {
+        "blend_mode": "normal", 
+        "image": "product_images/mug_11oz/cover/foreground.png"
+      }, 
+      "height": 806, 
+      "masks": [
+        {
+          "align": "centre", 
+          "blend_mode": "normal", 
+          "enclosing_quadrilateral": {
+            "bottom_left": [
+              93, 
+              72
+            ], 
+            "bottom_right": [
+              1100, 
+              72
+            ], 
+            "size": {
+              "height": 416, 
+              "width": 1007
+            }, 
+            "top_left": [
+              93, 
+              488
+            ], 
+            "top_right": [
+              1100, 
+              488
+            ]
+          }, 
+          "mask": "product_images/mug_11oz/cover/mask.png"
+        }
+      ], 
+      "name": "cover", 
+      "width": 1200
+    }
+  ], 
+  "template_id": "mug_11oz"
+}
