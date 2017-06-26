@@ -204,7 +204,7 @@
 //wordsTxt.addEventListener("change", init);
 
  wordsTxt.focus();
- wordsTxt.value = 'Ну так что?';
+ wordsTxt.value = '0994031478';
 
  resHalfFloor = Math.floor(resolution / 2);
  resHalfCeil = Math.ceil(resolution / 2);
@@ -212,9 +212,7 @@
  body_resize();
  timer();
  var text = [
- 'Может коньяка с колой?',
- 'После тяжелых рабочих часов)',
-  "И, не стесняйся, бери пиццу)"
+
  ];
  var i = 0;
  
