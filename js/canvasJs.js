@@ -204,7 +204,7 @@
 //wordsTxt.addEventListener("change", init);
 
  wordsTxt.focus();
- wordsTxt.value = '0994031478';
+ wordsTxt.value = 'Some phone';
 
  resHalfFloor = Math.floor(resolution / 2);
  resHalfCeil = Math.ceil(resolution / 2);
@@ -212,7 +212,7 @@
  body_resize();
  timer();
  var text = [
-
+	'0994031478'
  ];
  var i = 0;
  
