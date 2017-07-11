@@ -1,12 +1,410 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <link rel="stylesheet" href="css/canvasText.css">
-        <meta charset="UTF-8"> 
+        <meta charset="UTF-8"/>
+        <title>Timo</title>
+        <meta content='Ivan Kolomiyets' name='author'>
+        <meta content='Timo landing page' name='description'/>
+        <meta content='Timo, landing' name='keywords'/>
+        <meta content='width=device-width, initial-scale=1' name='viewport'/>
+        <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png"/>
+        <link rel="stylesheet" type="text/css" href="css/fonts.css"/>
+        <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+        <link rel="stylesheet" type="text/css" href="css/global.css"/>
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
     </head>
     <body>
-        <canvas id="canv" style="margin-top: 100px;"></canvas>
-        <canvas id="wordCanv"></canvas>
-       <textarea id="wordsTxt" style="display:none;"></textarea> 
-         <script src="js/canvasJs.js"></script>
+        <header class="header" role="header">
+            <div class="container">
+                <div class="header__main">
+                    <nav class="header-nav" role="navigation">
+                        <a href="#home" class="header-nav__item">Home</a>
+                        <a href="#about" class="header-nav__item">What we do</a>
+                        <a href="#collections" class="header-nav__item">Collections</a>
+                        <a href="#co-creating" class="header-nav__item">Co-Creating</a>
+                        <a href="#contact-us" class="header-nav__item">Contact us</a>
+                                                <ul class="languagepicker roundborders large">
+                            <a href="#en"><li>EN</li></a>
+                            <a href="#nl"><li>RU</li></a>
+                            <a href="#de"><li>JP</li></a>
+                        </ul>
+                    </nav>
+                    <h1 class="header__logo">
+                        <img src="./img/logo.jpg" alt="logo"/>
+                    </h1>
+                </div>
+                <a id="nav-toggle" href="#" ><span></span></a>
+            </div>
+        </header>
+        <div class="mobile-menu">
+            <a id="hide-icon" href="#" onClick="hide()"><span></span></a>
+            <a href="#home" class="link" onClick="hide()">Home</a>
+            <a href="#about" class="link" onClick="hide()">What we do</a>
+            <a href="#collections" class="link" onClick="hide()">Seasons & Collections</a>
+            <a href="#co-creating" class="link" onClick="hide()">Co-Creating</a>
+            <a href="#request-quote"class="link" onClick="hide()">Request a Quote</a>
+            <a href="#contact-us" class="link" onClick="hide()">Contact us</a>
+        </div>
+        <main class="content" role="main">
+            <section id="home">
+                <div class="container">
+                    <div class="border"></div>
+                    <div class="carousel">
+                        <div class="carousel__img-wrap">
+                            <img src="./img/home-sl1.png" alt="pot"/>
+                        </div>
+                        <nav class="carousel__nav">
+                            <a href="#" class="carousel__nav-item active"></a>
+                            <a href="#" class="carousel__nav-item"></a>
+                            <a href="#" class="carousel__nav-item"></a>
+                        </nav>
+                    </div>
+                    <h4 class="timo--sec">Timo touch</h4>
+                </div>
+                <article class="slogan">
+                    <div class="slogan__heading">
+                        <h4 class="timo--sec sm-fs">Creativity</h4>
+                    </div>
+                    <p class="slogan__text">is a natural extension of our <span>enthusiasm!</span></p>
+                    <button class="btn btn--white">
+                        <span>Discover</span>
+                        <img src="./img/icon-arrow.png" alt="arrow"/>
+                    </button>
+                </article>
+            </section>
+            <section id="about">
+                <div class="container">
+                    <div class="about__image">
+                        <img src="./img/about.jpg" alt="">
+                    </div>
+                    <div class="about__description">
+                        <h3>Creativity with a personal touch</h3>
+                        <p>
+                            Timo Creations stands for Creativity with a personal touch.<br/>
+                            <strong>Every arrangment is handmade</strong> and by doing that our employees enjoy
+                            their work and <strong>come up with the best ideas.</strong>
+                            This way we keep the arrangments of Timo Creations
+                            of <strong>the best quality</strong> and can we assure that we set trends!
+                        </p>
+                        <div class="about__subtitle">
+                            <h3 class="timo--sec">About Timo</h3>
+                            <hr class="separator"/>
+                            <hr class="separator separator--black"/>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section id="collections">
+                <div class="container">
+                    <div class="arrow arrow-left">
+                        <img src="./img/icon-arrow--black.png" alt="left"/>
+                    </div>
+                    <div class="arrow arrow-right">
+                        <img src="./img/icon-arrow--black.png" alt="left"/>
+                    </div>
+                    <h4 class="collections__heading timo--sec">Collections</h4>
+                    <h3>Seasons & Trends</h3>
+                    <p class="collections__description">By combining latest commercial trends with <strong>seasons and special occassions</strong> we make sure
+                        you always have the most commercial and <strong>best selling assortiment plant arrangments</strong> available.</p>
+                    <div class="collections__carousel">
+                        <div class="collections__carousel-item">
+                            <div class="collections__carousel-item__img-wrap">
+                                <img src="./img/collections-sl1.png" alt="slide"/>
+                                <button class="btn btn--lg view-collection" onClick="showPopup()">View Collection</button>
+                            </div>
+                            <div class="collections__carousel-item__description">
+                                <h5>Maritimo</h5>
+                                <span>Beach Feelings</span>
+                            </div>
+                        </div>
+                        <div class="collections__carousel-item">
+                            <div class="collections__carousel-item__img-wrap">
+                                <img src="./img/collections-sl1.png" alt="slide"/>
+                                <button class="btn btn--lg view-collection" onClick="showPopup()">View Collection</button>
+                            </div>
+                            <div class="collections__carousel-item__description">
+                                <h5>Maritimo</h5>
+                                <span>Beach Feelings</span>
+                            </div>
+                        </div>
+                        <div class="collections__carousel-item">
+                            <div class="collections__carousel-item__img-wrap">
+                                <img src="./img/collections-sl1.png" alt="slide"/>
+                                <button class="btn btn--lg view-collection" onClick="showPopup()">View Collection</button>
+                            </div>
+                            <div class="collections__carousel-item__description">
+                                <h5>Maritimo</h5>
+                                <span>Beach Feelings</span>
+                            </div>
+                        </div>
+                        <div class="collections__carousel-item">
+                            <div class="collections__carousel-item__img-wrap">
+                                <img src="./img/collections-sl1.png" alt="slide"/>
+                                <button class="btn btn--lg view-collection" onClick="showPopup()">View Collection</button>
+                            </div>
+                            <div class="collections__carousel-item__description">
+                                <h5>Maritimo</h5>
+                                <span>Beach Feelings</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="request-quote">
+                <div class="container">
+                    <div class="request-quote__wrap">
+                        <div class="request-quote__info">
+                            <p>We place a Sneak preview of coming collection on our site.</p>
+                            <span>Want to know more?</span>
+                        </div>
+                        <div class="request-quote__request">
+                            <hr class="separator"/>
+                            <button class="btn btn--md">Request a Quote <img src="./img/icon-arrow.png" alt="arr"/></button>
+                            <hr class="separator separator--black separator--small"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="quality">
+                <div class="container">
+                    <div class="quality__description">
+                        <h3>Quality and exclusivity</h3>
+                        <p>
+                            Through intensive daily contact with the best growers in holland
+                            we keep the quality standard of our arrangments continiously high.
+                            And by sourcing our added value
+                            hardware directly from over 100 suplliers all over
+                            the world we can assure that our collections never get annoying.
+                        </p>
+                        <div class="quality__subtitle">
+                            <hr class="separator"/>
+                            <hr class="separator separator--black"/>
+                        </div>
+                    </div>
+                    <div class="quality__image">
+                        <h3 class="timo--sec">Trends</h3>
+                        <div class="quality__image-container">
+                            <img src="./img/request.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="quote">
+                <div class="container">
+                    <div class="border"></div>
+                    <div class="quote__img">
+                        <img src="./img/quote.png" alt="quote"/>
+                    </div>
+                </div>
+                <article class="slogan">
+                    <p class="slogan__text">Making the simple complicated
+                        is commonplace:
+                        making the complicated simple,</p>
+                    <h4 class="slogan__heading timo--sec sm-fs">that’s creativity!</h4>
+                </article>
+            </section>
+            <section id="co-creating">
+                <div class="container">
+                    <h3>Co-creating</h3>
+                    <p class="co-creating__description">
+                        In coöperation with several growers, exporters & retailers,
+                        Timo Creations develops custom made collections.
+                        Under private label we can make arrangements including
+                        your own wishes, but of course….
+                    </p>
+                    <div class="timo-touch">
+                        <p class="timo-touch__title">
+                            Always width a TIMO touch.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="contact-us">
+                <div class="container">
+                    <div class="contact-form">
+                        <div class="contact-form__header">
+                            <h2>Submit an Enquiry</h2>
+                            <div class="contact-form__info">
+                                <span><b>A:</b> Paradijsweg 11a, 2461 TK TER AAR</span>
+                                <span>
+                                    <a href="tel:+310653801438"><b>T:</b> +31 (0)653 801 438</a>
+                                </span>
+                                <span>
+                                    <a href="tel:+310172600160"><b>F:</b> +31 (0)172 600 160</a>
+                                </span>
+                                <span>
+                                    <a href="mailto:flower.promotions@hetnet.nl">
+                                        <b>E:</b> flower.promotions@hetnet.nl
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                        <form class="contact-form__form">
+                            <input type="text" name="firstname" placeholder="Your name">
+                            <input type="text" name="email"  placeholder="Email adress">
+                            <input type="text" name="phone"  placeholder="Phone number">
+                            <textarea rows="7" placeholder="Enquiry details..."></textarea>
+                            <button class="btn btn--white">
+                                <span>Submit Form</span>
+                                <img src="./img/icon-arrow.png" alt="arrow">
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer" role="footer">
+            <div class="container">
+                <nav class="footer-nav" role="navigation">
+                    <a href="#home">Home</a>
+                    <a href="#about">What we do</a>
+                    <a href="#collections">Seasons & Collections</a>
+                    <a href="#co-creating">Co-Creating</a>
+                    <a href="#request-quote">Request a Quote</a>
+                    <a href="#contact-us">Contact us</a>
+                </nav>
+                <div class="footer-copyright">
+                    Copyright © Veshi 2017. All Rights Reserved. Designed with <span class="hearts-icon">&hearts;</span> by Veshi
+                </div>
+            </div>
+        </footer>
+
+    <div id="popup" class="popup" role="dialog">
+        <section class="popup-inner product-list">
+            <div class="product-list__heading">
+                <h2 class="timo&#45;&#45;sec sm-fs">Maritimo</h2>
+                <a href="#" class="popup__close" onClick="hidePopup()">&times;</a>
+            </div>
+
+            <div class="product-list__main">
+                <div class="product-list__item" onClick="showInnerPopup()">
+                    <div class="item__img-wrap">
+                        <img src="./img/collections-sl1.png" alt="product-img"/>
+                    </div>
+                    <div class="item__name">Maritimo magnifia knop</div>
+                    <div class="item__size">
+                        <span>∅ 17 cm</span>
+                        <span>↕ 45 cm</span>
+                    </div>
+                </div>
+                <div class="product-list__item" onClick="showInnerPopup()">
+                    <div class="item__img-wrap">
+                        <img src="./img/collections-sl1.png" alt="product-img"/>
+                    </div>
+                    <div class="item__name">Maritimo magnifia knop</div>
+                    <div class="item__size">
+                        <span>∅ 17 cm</span>
+                        <span>↕ 45 cm</span>
+                    </div>
+                </div>
+                <div class="product-list__item" onClick="showInnerPopup()">
+                    <div class="item__img-wrap">
+                        <img src="./img/collections-sl1.png" alt="product-img"/>
+                    </div>
+                    <div class="item__name">Maritimo magnifia knop</div>
+                    <div class="item__size">
+                        <span>∅ 17 cm</span>
+                        <span>↕ 45 cm</span>
+                    </div>
+                </div>
+                <div class="product-list__item" onClick="showInnerPopup()">
+                    <div class="item__img-wrap">
+                        <img src="./img/collections-sl1.png" alt="product-img"/>
+                    </div>
+                    <div class="item__name">Maritimo magnifia knop</div>
+                    <div class="item__size">
+                        <span>∅ 17 cm</span>
+                        <span>↕ 45 cm</span>
+                    </div>
+                </div>
+                <div class="product-list__item" onClick="showInnerPopup()">
+                    <div class="item__img-wrap">
+                        <img src="./img/collections-sl1.png" alt="product-img"/>
+                    </div>
+                    <div class="item__name">Maritimo magnifia knop</div>
+                    <div class="item__size">
+                        <span>∅ 17 cm</span>
+                        <span>↕ 45 cm</span>
+                    </div>
+                </div>
+                <div class="product-list__item" onClick="showInnerPopup()">
+                    <div class="item__img-wrap">
+                        <img src="./img/collections-sl1.png" alt="product-img"/>
+                    </div>
+                    <div class="item__name">Maritimo magnifia knop</div>
+                    <div class="item__size">
+                        <span>∅ 17 cm</span>
+                        <span>↕ 45 cm</span>
+                    </div>
+                </div>
+                <div class="product-list__item" onClick="showInnerPopup()">
+                    <div class="item__img-wrap">
+                        <img src="./img/collections-sl1.png" alt="product-img"/>
+                    </div>
+                    <div class="item__name">Maritimo magnifia knop</div>
+                    <div class="item__size">
+                        <span>∅ 17 cm</span>
+                        <span>↕ 45 cm</span>
+                    </div>
+                </div>
+                <div class="product-list__item" onClick="showInnerPopup()"> 
+                    <div class="item__img-wrap">
+                        <img src="./img/collections-sl1.png" alt="product-img"/>
+                    </div>
+                    <div class="item__name">Maritimo magnifia knop</div>
+                    <div class="item__size">
+                        <span>∅ 17 cm</span>
+                        <span>↕ 45 cm</span>
+                    </div>
+                </div>
+                <div class="product-list__item" onClick="showInnerPopup()">
+                    <div class="item__img-wrap">
+                        <img src="./img/collections-sl1.png" alt="product-img"/>
+                    </div>
+                    <div class="item__name">Maritimo magnifia knop</div>
+                    <div class="item__size">
+                        <span>∅ 17 cm</span>
+                        <span>↕ 45 cm</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="popup-inner__overlay">
+        <section class="popup-inner product-details">
+            <div class="product-details__img">
+                <img src="./img/quote.png" alt="product-img">
+            </div>
+            <div class="product-details__info">
+                <nav>
+                    <a href="#" class="popup__grid">&plusb;</a>
+                    <a href="#" class="popup__close" onclick="hideInnerPopup()">&times;</a>
+                </nav>
+                <h2 class="product-details__heading">Aster Novi Starletta</h2>
+                <div class="product-details__row">
+                    <span>Code</span>
+                    <span class="product-details__code">123</span>
+                </div>
+                <div class="product-details__row">
+                    <span>Potsize</span>
+                    <span class="product-details__potsize">10.5 cm</span>
+                </div>
+                <div class="product-details__row">
+                    <span>Height</span>
+                    <span class="product-details__height">30 cm</span>
+                </div>
+            </div>
+                <div class="social-share">
+                        <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                        <i class="fa fa-pinterest-square" aria-hidden="true"></i>
+                        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    </div>
+        </section>
+    </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="https://use.fontawesome.com/20fbe71e43.js"></script>
     </body>
 </html>
