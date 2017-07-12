@@ -413,14 +413,14 @@
                 -ms-flex-direction: column;
                     flex-direction: column;
             cursor: pointer;
-            -webkit-transition: opacity 300ms;
-            -o-transition: opacity 300ms;
-            transition: opacity 300ms;
+            -webkit-transition: box-shadow 300ms;
+            -o-transition: box-shadow 300ms;
+            transition: box-shadow 300ms;
         }
         .collections__carousel-item:hover {
-            -webkit-box-shadow: 0px 0px 35px 0px rgba(50, 50, 50, 0.3);
-            -moz-box-shadow: 0px 0px 35px 0px rgba(50, 50, 50, 0.3);
-            box-shadow: 0px 0px 35px 0px rgba(50, 50, 50, 0.3);
+            -webkit-box-shadow: 0 0 35px 0 rgba(50, 50, 50, 0.3);
+            -moz-box-shadow: 0 0 35px 0 rgba(50, 50, 50, 0.3);
+            box-shadow: 0 0 35px 0 rgba(50, 50, 50, 0.3);
         }
         .collections__carousel-item:hover .collections__carousel-item__img-wrap img {
             opacity: .7;
@@ -455,6 +455,9 @@
         }
         .collections__carousel-item__img-wrap img {
             width: 80%;
+            -webkit-transition: opacity 300ms;
+            -o-transition: opacity 300ms;
+            transition: opacity 300ms;
         }
         .collections__carousel-item__description {
             background-color: #fff;
@@ -783,6 +786,9 @@
         transform: translate(-100px, 0);
         padding: 10px 100px 40px 100px;
     }
+    .contact-form__form [name="firstname"]:hover {
+        border-bottom: 1px solid #000;
+    }
     .contact-form__header {
         margin: 0 auto;
         padding: 60px 0 40px 0;
@@ -935,7 +941,8 @@
                     transform: scale(.9);
         }
         .popup__grid {
-            font-size: 30px;
+            max-width: 30px;
+            max-height: 30px;
             margin-right: 20px;
         }
         .popup__close {
@@ -1066,6 +1073,7 @@
             -ms-flex-align: start;
                 align-items: flex-start;
         padding: 30px 25px;
+        position: relative;
     }
     .product-details__info nav {
         width: 100%;
@@ -1189,16 +1197,21 @@
     position: absolute;
     padding: 0 20px;
     bottom: 0;
+    right: 0;
 }
-.social-share i{
-    font-size: 38px;
+.social-share a {
+    max-width: 30px;
     transition: opacity 300ms 100ms, transform 200ms;
     cursor: pointer;
+    display: inline-flex;
 }
-.social-share i:hover {
+.social-share a img {
+    max-height: 30px;
+}
+.social-share a:hover {
     opacity: .8;
 }
-.social-share i:active {
+.social-share a:active {
     -webkit-transform: translateY(-3px) scale(.85);
         -ms-transform: translateY(-3px) scale(.85);
             transform: translateY(-3px) scale(.85);
@@ -1309,7 +1322,11 @@
         right: 40px;
     }
 }
-
+@media (max-width: 991px) and (min-width: 640px){
+    #home {
+        margin-bottom: 20px;
+    }
+}
 @media (max-width: 991px) {
     /*HOME*/
     #home .container { 
@@ -1627,18 +1644,31 @@
         display: block;
         padding: 5px 0 5px 0;
     }
-    .product-details__info nav{
+    .product-details__heading {
+        padding-right: 90px;
+    }
+    .product-details__info nav {
         position: absolute;
         top: 5px;
-        left: 0;
         right: 0;
+        width: 90px;
     }
+/*    .product-details__info nav .popup__close {
+        position: absolute;
+        width: 30px;
+        right: 10px;
+    }
+    .product-details__info nav .popup__grid {
+        position: absolute;
+        width: 30px;
+        right: 20px;
+    }*/
     #collections .container{
         margin-bottom: 40px;
     }
     .social-share {
         position: static;
-        padding: 5px;;
+        padding: 5px;
     }
     .popup-inner{
         padding: 15px;
