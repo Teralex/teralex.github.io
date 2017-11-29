@@ -95,20 +95,20 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section{
     font-size: 15px;
 }
 .first{margin-left:0; clear:left;}
-.one_quarter{width:20%;}
+.one_quarter{width:25%;padding: 0 2% 0 5%;}
 
 .one_quarter:first-child {
     border-right: solid 2px #1b2a31;
-    margin-right:10%;
+   
 }
 
 .one_quarter:nth-child(2) {
     border-right: solid 2px #1b2a31;
-    margin-right:5%;
+
 }
 
 .one_quarter:nth-child(3) {
-    margin-right:5%;
+   
 }
 .one_third{width:31%;}
 .one_half, .two_quarter{width:45%;}
@@ -234,11 +234,18 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section{
 #latest ul li .excerpt *{margin:0; padding:0;}
 #latest ul li .excerpt time{font-size:.8rem;}
 #latest ul li .excerpt .heading{margin-bottom:15px; font-size:1.2rem;}
-
-
+.linklist img{
+    margin: 1em 2em 0 0;
+}
+.white{
+    color:#fff;
+}
 /* Footer */
-#footer{padding:80px 0; }
-#footer .title{margin:0 0 50px 0; padding:0; font-size:1.2rem;}
+#footer{padding:80px 0; max-width: 70%;  font-size: 13px;
+line-height: 2em;
+white-space: nowrap;
+}
+#footer .title{margin:0 0 50px 0; padding:0; font-size:1.2rem;color:#21b0ff}
 #footer .linklist li{display:block; margin-bottom:15px; padding:0 0 15px 0; border-bottom:1px solid;}
 #footer .linklist li:last-child{margin:0; padding:0; border:none;}
 #footer .linklist li::before, #footer .linklist li::after{display:table; content:"";}
@@ -460,7 +467,7 @@ td{border-width:0 1px;}
 .partners{
     position: relative;
     width: 100%;
-    margin: 4em auto;
+    margin: 6em auto 2em;
 }
 .leftline{
     position:absolute;
@@ -474,7 +481,39 @@ td{border-width:0 1px;}
 
 }
 
-.linetext{
+.rightline{
+    position:absolute;
+    top: -2em;
+    margin-right:-800px;
+    right: 0;
+    transform: translateZ(0);
+    height:4px;
+    width:800px;
+    background:gray;
+
+}
+
+.rightline{
+    position:absolute;
+    top: -2em;
+    margin-right:-600px;
+    right: 0;
+    transform: translateZ(0);
+    height:4px;
+    width:600px;
+    background:gray;
+
+}
+.rightline .linetext{
+    position: absolute;
+    left: 2em;
+    top: -3em;
+    font-size: 0.7em;
+    letter-spacing: 0.2em;
+    color: gray;
+    display: none;
+}
+.leftline .linetext{
     position: absolute;
     right: 0;
     top: 1em;
@@ -484,7 +523,7 @@ td{border-width:0 1px;}
     display: none;
 }
 
-.linetext:before{
+.leftline .linetext:before{
     content: 'SECURED';
     position: absolute;
     left: -36em;
