@@ -99,7 +99,7 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section{
 
 .one_quarter:first-child {
     border-right: solid 2px #1b2a31;
-   
+
 }
 
 .one_quarter:nth-child(2) {
@@ -108,7 +108,7 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section{
 }
 
 .one_quarter:nth-child(3) {
-   
+
 }
 .one_third{width:31%;}
 .one_half, .two_quarter{width:45%;}
@@ -242,8 +242,8 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section{
 }
 /* Footer */
 #footer{padding:80px 0; max-width: 70%;  font-size: 13px;
-line-height: 2em;
-white-space: nowrap;
+        line-height: 2em;
+        white-space: nowrap;
 }
 #footer .title{margin:0 0 50px 0; padding:0; font-size:1.2rem;color:#21b0ff}
 #footer .linklist li{display:block; margin-bottom:15px; padding:0 0 15px 0; border-bottom:1px solid;}
@@ -430,7 +430,7 @@ td{border-width:0 1px;}
     border-top: 10px solid transparent;
     border-right: 10px solid transparent;
     border-left: 10px solid transparent;
-    border-bottom: 10px solid white;
+    border-bottom: 10px solid gray;
     top: -1.5em;
 }
 .line{  
@@ -439,31 +439,41 @@ td{border-width:0 1px;}
     bottom: 0px;
     height: 100px;
     content: '';
-    border-top: 10px solid white;
-    border-right: 1px solid white;
+    border-top: 10px solid gray;
+    border-right: 1px solid gray;
 }
 
+.circles{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: gray;
+    content: '';
+    border-radius: 50%;
+    left: -2.5px;
+    top: -10px;
 
-.line:before{  
+}
+
+.circles::before {
     position: absolute;
     width: 10px;
     height: 10px;
     background: #ffffff;
     content: '';
     border-radius: 50%;
-    left: -4px;
-    top: -10px;
+    left: -2px;
+    top: -15px;
 }
-
-.line:after{  
+.circles::after {
     position: absolute;
-    width: 16px;
-    height: 16px;
+    width: 15px;
+    height: 15px;
     background: #ffffff;
     content: '';
     border-radius: 50%;
-    left: -7px;
-    top: -30px;
+    left: -4px;
+    top: -36px;
 }
 .partners{
     position: relative;
